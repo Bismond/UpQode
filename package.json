@@ -1,0 +1,26 @@
+{
+  "name": "upqode-test-task",
+  "version": "1.0.0",
+  "description": "The test consists of required  and selective sections.\r Required sections are header and footer.\r Selective sections are banner, services, team, contacts. You must select from this list 2 sections or more.",
+  "main": "index.js",
+  "author": "Dmytro Hrynchuk",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "",
+    "gulp-imagemin": "",
+    "gulp-minify-css": "",
+    "gulp-rigger": "",
+    "gulp-sass": "",
+    "gulp-sourcemaps": "",
+    "gulp-watch": "",
+    "imagemin-pngquant": "",
+    "rimraf": ""
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "gulp-terser": "^1.2.0"
+  }
+}

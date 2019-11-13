@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <section>
+            <img src="img/icons/upqode-logo.svg" alt="UPQODE logo">
+            <h1>upqode</h1>
+        </section>
+        <section>
+            <nav>
+                <input id="menu__toggle" type="checkbox" />
+
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+
+                <ul class="menu__box">
+                    <li>
+                        <a class="menu__item" href="">Home</a>
+                    </li>
+                    <li>
+                        <a class="menu__item" href="">Services</a>
+                    </li>
+                    <li>
+                        <a class="menu__item" href="">Team</a>
+                    </li>
+                    <li>
+                        <a class="menu__item" href="">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <section class="swiper-container">
+        <section class="swiper__content">
+            <h1>Mileage Made Simple</h1>
+            <h3>Motivation And Your Personal Vision An Unbeatable Force</h3>
+
+            <button>Start Free Trial</button>
+        </section>
+
+        <section class="swiper-wrapper">
+            <section id="player1" class="swiper-slide"></section>
+            <section id="player2" class="swiper-slide"></section>
+            <section id="player3" class="swiper-slide"></section>
+        </section>
+
+        <section class="swiper-button-next"></section>
+        <section class="swiper-button-prev"></section>
+
+        <section class="swiper-pagination"></section>
+    </section>
+
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium architecto distinctio quos labore iste, id odio quis cumque voluptates nostrum reprehenderit inventore, autem consequuntur saepe possimus facere officiis necessitatibus qui voluptatum aut alias ea. Et quaerat hic doloribus? Explicabo quaerat voluptates temporibus sequi quam atque molestias quos quibusdam omnis in!</h1>
+
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+</body>
+
+</html>
