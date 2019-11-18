@@ -11,16 +11,17 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
-    <script src="js/script.js"></script>
+
 </head>
 
 <body>
     <header>
-        <section>
+        <section class="menu__adaptive__logo">
             <img src="img/icons/upqode-logo.svg" alt="UPQODE logo">
             <h1>upqode</h1>
         </section>
-        <section>
+
+        <section class="menu__adaptive">
             <nav>
                 <input id="menu__toggle" type="checkbox" />
 
@@ -30,23 +31,26 @@
 
                 <ul class="menu__box">
                     <li>
-                        <a class="menu__item" href="">Home</a>
+                        <a class="menu__item" href="#home">Home</a>
                     </li>
+
                     <li>
-                        <a class="menu__item" href="">Services</a>
+                        <a class="menu__item" href="#">Services</a>
                     </li>
+
                     <li>
-                        <a class="menu__item" href="">Team</a>
+                        <a class="menu__item" href="#">Team</a>
                     </li>
+
                     <li>
-                        <a class="menu__item" href="">Contact Us</a>
+                        <a class="menu__item" href="#contactUs">Contact Us</a>
                     </li>
                 </ul>
             </nav>
         </section>
     </header>
 
-    <section class="swiper-container">
+    <section class="swiper-container" id="home">
         <section class="swiper__content">
             <h1>Mileage Made Simple</h1>
             <h3>Motivation And Your Personal Vision An Unbeatable Force</h3>
@@ -66,22 +70,127 @@
         <section class="swiper-pagination"></section>
     </section>
 
-    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium architecto distinctio quos labore iste, id odio quis cumque voluptates nostrum reprehenderit inventore, autem consequuntur saepe possimus facere officiis necessitatibus qui voluptatum aut alias ea. Et quaerat hic doloribus? Explicabo quaerat voluptates temporibus sequi quam atque molestias quos quibusdam omnis in!</h1>
+    <section class="location__wrapper" id="contactUs">
+        <section>
+            <section class="location__title_open">
+                <pre>Meet Us 
+in Your City</pre>
+                <address>2005 Stokes Isle Apt. 896, Venaville, <p class="location__name">Los Angeles</p> 10010</address>
+            </section>
+
+            <section class="location__items__container">
+                <section class="location__item" id="LosAngeles" onclick="createMapPoint(0)">
+                    <img src="img/icons/location-open.svg" alt="Location">
+                    <section>
+                        <h4>Los Angeles, USA</h4>
+                        <address>2005 Stokes Isle Apt. 896, Venaville, Los Angeles 10010</address>
+                    </section>
+                </section>
+
+                <section class="location__item" onclick="createMapPoint(1)">
+                    <img src="img/icons/location-close.svg" alt="Location">
+                    <section>
+                        <h4>New York, USA</h4>
+                        <address>2005 Stokes Isle Apt. 896, Venaville, New York 10010</address>
+                    </section>
+                </section>
+
+                <section class="location__item" onclick="createMapPoint(2)">
+                    <img src="img/icons/location-close.svg" alt="Location">
+                    <section>
+                        <h4>Boston, USA</h4>
+                        <address>2005 Stokes Isle Apt. 896, Venaville, Boston 10010</address>
+                    </section>
+                </section>
+
+                <section class="location__item" onclick="createMapPoint(3)">
+                    <img src="img/icons/location-close.svg" alt="Location">
+                    <section>
+                        <h4>Detroit, USA</h4>
+                        <address>2005 Stokes Isle Apt. 896, Venaville, Detroit 10010</address>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <section id="googleMap"></section>
+
+        <section class="location__container_open">
+            <section class="location_open">
+                <h3 class="location__name">Los Angeles</h3>
+                <address>2005 Stokes Isle Apt. 896, Venaville, <p class="location__name">Los Angeles</p> 10010</address>
+            </section>
+
+            <section class="location__content_open">
+                <section class="location__schedule_open">
+                    <img src="img/icons/location-schedule.svg" alt="Schedule">
+                    <h4>Work Schedule</h4>
+                    <p>Mon - Sat: </p>
+                    <p>11:00-19:00, </p>
+                    <p>Sun: </p>
+                    <p>11:00-16:00</p>
+                </section>
+
+                <section class="location__tel_open">
+                    <img src="img/icons/location-tel.svg" alt="Tel">
+                    <h4>Head Office</h4>
+                    <p>(0043) 568 456 902</p>
+                    <p>(0043) 568 456 902</p>
+                </section>
+
+                <section class="location__email_open">
+                    <img src="img/icons/location-email.svg" alt="Email">
+                    <h4>Head Office</h4>
+                    <p>hello@pad.architecture</p>
+                    <p>support@pad.architecture</p>
+                </section>
+            </section>
+        </section>
+    </section>
+
+    <footer>
+        <section>
+            <img src="img/icons/upqode-logo.svg" alt="UPQODE logo">
+            <h1>upqode</h1>
+        </section>
+
+        <section>
+            <nav>
+                <input id="menu__toggle" type="checkbox" />
+
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+
+                <ul class="menu__box">
+                    <li>
+                        <a class="menu__item" href="">Home</a>
+                    </li>
+
+                    <li>
+                        <a class="menu__item" href="">Services</a>
+                    </li>
+
+                    <li>
+                        <a class="menu__item" href="">Team</a>
+                    </li>
+
+                    <li>
+                        <a class="menu__item" href="">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <section>
+            <p class="copyright">© UpQode 2019. All Right Reserved.</p>
+        </section>
+    </footer>
 
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-
-    <script>
-        const swiper = new Swiper('.swiper-container', {
-            loop: true,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            pagination: {
-                el: '.swiper-pagination',
-            },
-        });
-    </script>
+    <script src="js/script.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3WsVHs9dOOA0BDTjID8G8bUVlwIrfCQs&callback=initGoogleMaps"></script>
 </body>
 
 </html>
